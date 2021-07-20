@@ -65,6 +65,7 @@ export default function Cadastro(){
                 style={styles.student}
                 value={student}
                 onValueChange={(valorSelecionado) => setStudent(valorSelecionado)}
+                trackColor={{false: '#FFFFFF', true: '#00FF00'}}
             />
         </View>
 
@@ -112,5 +113,15 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 17,
         fontWeight: 'bold',
+    },
+    studentContainer: {
+        marginTop: 25,
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    },
+    studentTxt: {
+        fontSize: 18,
+        fontWeight: '500',
+        textAlign: 'center'
     }
 })
