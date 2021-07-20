@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {View, StyleSheet, Text, TextInput, Switch} from 'react-native';
+import {View, StyleSheet, Text, TextInput, Switch, TouchableOpacity} from 'react-native';
 
 import {Picker} from '@react-native-community/picker';
 import Slider from '@react-native-community/slider';
@@ -69,6 +69,11 @@ export default function Cadastro(){
             />
         </View>
 
+{/** FALTA TERMINAR O BOTÃO */}
+        <TouchableOpacity style={styles.button}>
+            <Text style={styles.buttonTxt}>Cadastrar</Text>
+        </TouchableOpacity>
+
         </View>
     )
 }
@@ -123,5 +128,18 @@ const styles = StyleSheet.create({
         fontSize: 18,
         fontWeight: '500',
         textAlign: 'center'
+    },
+    button: {
+        marginTop: 67,
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: '#00FF00',
+        height: 47,
+        borderRadius: 5
+    },
+    buttonTxt: {
+        fontSize: 22,
+        color: '#FFFFFF',
+        fontWeight: 'bold'
     }
 })
