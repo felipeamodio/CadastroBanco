@@ -14,19 +14,19 @@ export default function Logo(){
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        marginBottom: 30
+        marginBottom: 30,
     },
     bank: {
-        fontSize: 27,
+        fontSize: 37,
         fontWeight: '600',
         color: '#FFFFFF'
     },
     four: {
-        fontSize: 31,
+        fontSize: 41,
         fontWeight: 'bold'
     },
     devs: {
-        fontSize: 27,
+        fontSize: 37,
         fontWeight: '600',
         color: '#FFFFFF'
     }
