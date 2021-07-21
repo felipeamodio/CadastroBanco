@@ -60,7 +60,7 @@ export default function Cadastro(){
         </View>
 
         <View style={styles.studentContainer}>
-            <Text style={styles.studentTxt}>Estudante</Text>
+            <Text style={styles.studentTxt}>É estudante? {student ? 'Sim' : 'Não'}</Text>
             <Switch 
                 style={styles.student}
                 value={student}
